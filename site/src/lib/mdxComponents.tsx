@@ -48,7 +48,7 @@ const components = {
   p: (props) => <Text my={4}>{props.children}</Text>,
   img: ({ children, ...rest }) => <Image {...rest} borderRadius={4} my={2}>{children}</Image>,
   code: ({ className, children: code }) => {
-    const language = className.replace('language-', '');
+    const language = className?.replace('language-', '');
 
     return (
       <CodeBlock
