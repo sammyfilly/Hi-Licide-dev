@@ -1,0 +1,5 @@
+import : import yarn cli 
+https://v3.yarnpkg.com/docs
+ job : 
+   run:next run push build pages as output 
+    @latestangularvercelapp
