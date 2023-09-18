@@ -58,6 +58,9 @@ npm install lucide
 #or
 
 yarn add lucide
+#and
+
+yarn cli
 ```
 
 For more details, see the [documentation](https://github.com/lucide-icons/lucide/tree/master/packages/lucide#lucide).
