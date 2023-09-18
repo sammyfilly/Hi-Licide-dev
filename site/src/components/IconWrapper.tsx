@@ -1,11 +1,11 @@
 import { forwardRef, SVGProps } from 'react';
 
 interface IconWrapperProps extends SVGProps<SVGSVGElement> {
-  content: string;
+  src: string;
 }
 
 export const IconWrapper = forwardRef<SVGSVGElement, IconWrapperProps>((props, ref) => {
-  const defaultAttrs : SVGProps<SVGSVGElement>= {
+  const defaultAttrs: SVGProps<SVGSVGElement> = {
     xmlns: 'http://www.w3.org/2000/svg',
     width: '24px',
     height: '24px',
@@ -17,11 +17,12 @@ export const IconWrapper = forwardRef<SVGSVGElement, IconWrapperProps>((props, r
     strokeLinejoin: 'round',
   };
 
-  const { content, ...rest } = props;
+  const { src, ...rest } = props;
   const attrs = {
     ...defaultAttrs,
     ...rest,
   };
+  const content = src.replace(/<svg[^>]*>|<\/svg>/g, '');
 
   return <svg ref={ref} {...attrs} dangerouslySetInnerHTML={{ __html: content }} />;
 });

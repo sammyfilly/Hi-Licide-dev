@@ -1,12 +1,20 @@
+import { IconNode } from "../../packages/lucide-react/dist/lucide-react";
+
 export interface IconEntity {
-  content: string;
-  contributors: Contributor[];
   name: string;
-  src: string;
   tags: string[];
+  categories: string[];
+  contributors: Contributor[];
+  iconNode: IconNode;
 }
 
 export interface Contributor {
   author: string;
-  commit: string;
+}
+
+export interface Category {
+  name: string
+  title: string
+  icon?: string
+  iconCount: number
 }

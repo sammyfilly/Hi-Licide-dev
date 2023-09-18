@@ -10,13 +10,15 @@ Implementation of the lucide icon library for web applications.
 
 ```bash
 npm install lucide
+```
 
-#or
+or
 
+```sh
 yarn add lucide
 ```
 
-For more details, see the [documentation](packages/lucide).
+For more details, see the [documentation](packages/lucide.md).
 
 ## React
 
@@ -24,13 +26,15 @@ Implementation of the lucide icon library for react applications.
 
 ```bash
 yarn add lucide-react
+```
 
-# or
+or
 
+```sh
 npm install lucide-react
 ```
 
-For more details, see the [documentation](packages/lucide-react).
+For more details, see the [documentation](packages/lucide-react.md).
 
 ## Vue 2
 
@@ -38,13 +42,15 @@ Implementation of the lucide icon library for vue applications.
 
 ```bash
 yarn add lucide-vue
+```
 
-# or
+or
 
+```sh
 npm install lucide-vue
 ```
 
-For more details, see the [documentation](packages/lucide-vue).
+For more details, see the [documentation](packages/lucide-vue.md).
 
 ## Vue 3
 
@@ -52,13 +58,15 @@ Implementation of the lucide icon library for vue applications.
 
 ```bash
 yarn add lucide-vue-next
+```
 
-# or
+or
 
+```sh
 npm install lucide-vue-next
 ```
 
-For more details, see the [documentation](packages/lucide-vue-next).
+For more details, see the [documentation](packages/lucide-vue-next.md).
 
 ## Svelte
 
@@ -66,25 +74,29 @@ Implementation of the lucide icon library for vue applications.
 
 ```bash
 yarn add lucide-svelte
+```
 
-# or
+or
 
+```sh
 npm install lucide-svelte
 ```
 
-For more details, see the [documentation](packages/lucide-svelte).
+For more details, see the [documentation](packages/lucide-svelte.md).
 
 ## Angular
 
 ```bash
 yarn add lucide-angular
+```
 
-# or
+or
 
+```sh
 npm install lucide-angular
 ```
 
-For more details, see the [documentation](packages/lucide-angular).
+For more details, see the [documentation](packages/lucide-angular.md).
 
 ## Preact
 
@@ -92,13 +104,15 @@ Implementation of the lucide icon library for preact applications.
 
 ```bash
 yarn add lucide-preact
+```
 
-# or
+or
 
+```sh
 npm install lucide-preact
 ```
 
-For more details, see the [documentation](packages/lucide-preact).
+For more details, see the [documentation](packages/lucide-preact.md).
 
 ## Figma
 
@@ -106,7 +120,7 @@ The lucide figma plugin.
 
 Visit [Figma community page](https://www.figma.com/community/plugin/939567362549682242/Lucide-Icons) to install the plugin.
 
-![Setting Page Size](https://www.figma.com/community/plugin/939567362549682242/thumbnail "Figma Lucide Cover")
+![Setting Page Size](https://www.figma.com/community/plugin/939567362549682242/thumbnail 'Figma Lucide Cover')
 
 ## Laravel
 

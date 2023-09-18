@@ -1,0 +1,18 @@
+{
+  "$schema": "../icon.schema.json",
+  "tags": [
+    "arrow",
+    "left",
+    "counter-clockwise",
+    "restart",
+    "reload",
+    "refresh",
+    "backup",
+    "undo"
+  ],
+  "categories": [
+    "arrows",
+    "design",
+    "photography"
+  ]
+}

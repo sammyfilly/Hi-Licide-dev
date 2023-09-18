@@ -10,13 +10,13 @@ The following is a set of guidelines for contributing to Lucide. Feel free to pr
 Feel free to open a pull-request to contribute to this project.
 
 **Working on your first Pull Request?** You can learn how from this *free* series
-[How to Contribute to an Open Source Project on GitHub](https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github)
+[How to Contribute to an Open Source Project on GitHub](https://app.egghead.io/playlists/how-to-contribute-to-an-open-source-project-on-github)
 
 Guidelines for pull requests:
 
 - __Make your commit messages as descriptive as possible.__ Include as much information as you can. Explain anything that the file diffs themselves won’t make apparent.
 - __Document your pull request__. Explain your fix, link to the relevant issue, add screenshots when adding new icons.
-- __Make sure the target of your pull request is the relevant branch__. Most of bugfix or new feature should go to the `master` branch.
+- __Make sure the target of your pull request is the relevant branch__. Most of bugfix or new feature should go to the `main` branch.
 - __Include only related work__. If your pull request has unrelated commit, it won't be accepted.
 
 ### Pull Requests Including Icons
@@ -25,28 +25,21 @@ Guidelines for pull requests:
 
 Please make sure you follow the icon guidelines, that should be followed to keep quality and consistency when making icons for Lucide.
 
-Read it here: [ICON_GUIDELINES](docs/ICON_DESIGN_GUIDE.md).
+Read it here: [ICON_GUIDELINES](/docs/icon-design-guide.md).
 
-### Templates
+### Editor guides
 
-Here you can find templates and instructions on how to implement the guidelines with different programs.
+Here you can find instructions on how to implement the guidelines with different vector graphics editors:
 
-#### Adobe Illustrator
+#### [Adobe Illustrator Guide](/docs/illustrator-guide.md)
 
-`Template`: You can find a template for Adobe Illustrator under `/docs/templates/illustrator-template.ai`.
-`Instructions`: You can find the [Illustrator Guide](/docs/ILLUSTRATOR_GUIDE.md) and how to work with the template in `/docs/ILLUSTRATOR_GUIDE.md`.
+You can also [download an Adobe Illustrator template](/docs/templates/illustrator-template.ai).
 
-#### Inkscape
+#### [Inkscape Guide](/docs/inkscape-guide.md)
 
-`Template`: None
-`Instructions`: You can find the [Inkscape Guide](/docs/INKSCAPE_GUIDE.md) and how to set up Inkscape under `/docs/INKSCAPE_GUIDE.md`.
+#### [Figma Guide](/docs/figma-guide.md)
 
-#### Figma
-
-`Template`: None
-`Instructions`: You can find the [Figma Guide](/docs/FIGMA_GUIDE.md) and how to set up Figma under `/docs/FIGMA_GUIDE.md`.
-
-#### Submitting Multiple Icons
+### Submitting Multiple Icons
 
 If you want submit multiple icons, please separate the icons and group them. That makes reviewing the icons easier and keep the thread clean and scoped.
 So don't submit multiple icons in one PR that have noting to do with each other.
@@ -65,23 +58,24 @@ If you are a designer who wants to contribute to Lucide but you don't know what 
 
 ## Development
 
-You will need minimum version of [Nodejs 16+](https://nodejs.org)
-For packagemanagement you will need [yarn v1](https://yarnpkg.com/getting-started/install).
+You will need minimum version of [Nodejs 16.4+](https://nodejs.org)
+For package management you will need [PNPM](https://pnpm.io/installation).
 For flutter package development, you need [Flutter 1.17+](https://docs.flutter.dev/get-started/install).
 
 After cloning the project you need to run:
 
 ```sh
-yarn # Install dependencies, including the workspace packages
+pnpm install # Install dependencies, including the workspace packages
 ```
 
-### Packages -> Yarn Workspaces
+### Packages -> PNPM Workspaces
 
-To distribute different packages we use yarn workspaces. Before you start make sure you are familiar with this setup. Read guide here: [yarn workspaces](https://classic.yarnpkg.com/lang/en/docs/workspaces).
+To distribute different packages we use PNPM workspaces. Before you start make sure you are familiar with this concept. The concept of working in workspaces is created by Yarn, they have a well written introduction: [yarn workspaces](https://classic.yarnpkg.com/lang/en/docs/workspaces).
 
 The configured directory for workspaces is the [packages](./packages) directory, located in the root directory. There you will find all the current packages from lucide.
+There are more workspaces defined, see [`pnpm-workspace.yaml`](./pnpm-workspace.yaml).
 
-> Note: One package is not managed by yarn:  **lucide-flutter**
+> Note: One package is not managed by pnpm:  **lucide-flutter**, this package is written in Dart and used pub for publishing.
 
 ### Generated Code
 
@@ -96,11 +90,11 @@ The commands for generating this code you will read in the next chapter.
 The build script includes multiple subcommands to: clean the dist directory, generate icon files, generate types files, and build/transpile code for each build format.
 
 ```sh
-yarn [package-name] build
+pnpm [package-name] build
 
 #example:
 
-yarn lucide-react build
+pnpm lucide-react build
 ```
 
 #### Testing
@@ -108,21 +102,21 @@ yarn lucide-react build
 Run unit tests with jest for each package to make sure all the package apis still works as expected.
 
 ```sh
-yarn [package-name] test
+pnpm [package-name] test
 
 #example:
 
-yarn lucide-vue test
+pnpm lucide-vue test
 ```
 
 Recommended to run the test watcher when making changes.
 
 ```sh
-yarn [package-name] test:watch
+pnpm [package-name] test:watch
 
 #example:
 
-yarn lucide-preact test:watch
+pnpm lucide-preact test:watch
 ```
 
 ### Unit Testing
@@ -131,15 +125,17 @@ When adding new features to for example the icon component for a framework. It i
 
 ### Local Testing
 
-To test changes in a local project, you can use `yarn link` or `npm link` to link the package. Before you do this make sure you builded the package first.
+To test changes in a local project, you can use `yarn link`, `npm link` or `pnpm link` to link the package. Before you do this make sure you builded the package first.
 
 ```sh
 # in packages/lucide-react
-yarn link
+
+npm run build &&
+npm link
 
 # in your local project
 
-yarn link lucide-react
+npm link lucide-react
 ```
 
 ## Project Structure
@@ -168,7 +164,7 @@ All the icons of lucide in SVG format. These will be used as source for all the 
 
 Includes all the (npm) packages of lucide.
 
-> Note: One package is not managed by yarn:  **lucide-flutter**
+> Note: One package is not managed by pnpm:  **lucide-flutter**, this package is written in Dart and used pub for publishing.
 
 ### scripts
 
