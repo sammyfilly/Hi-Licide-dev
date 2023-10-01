@@ -1,5 +1,5 @@
 import : import yarn cli 
 https://v3.yarnpkg.com/docs
- job : 
+visit: <https://yarnpkg.com/en/docs/cli/run> for documentation about this command.
    run:next run push build pages as output 
-    @latestangularvercelapp
+    @latestcreateapp
