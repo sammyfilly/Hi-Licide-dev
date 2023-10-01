@@ -2572,9 +2572,9 @@
   integrity sha512-QzSuZMBuG5u8HqYz01qtMdg/Jfctlnvj1z/lYnIDXs/golxw0fxtRAHd9KrzjR7Yxz1qVeI00o0kiO3PmVdJ9w==
 
 "@types/prop-types@*":
-  version "15.7.4"
-  resolved "https://registry.npmjs.org/@types/prop-types/-/prop-types-15.7.4.tgz"
-  integrity sha512-rZ5drC/jWjrArrS8BR6SIr4cWpW09RNTYt9AMZo3Jwwif+iacXAqgVjm0B0Bv/S1jhDXKHqRVNCbACkJ89RAnQ==
+  version "15.7.8"
+  resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.8.tgz#805eae6e8f41bd19e88917d2ea200dc992f405d3"
+  integrity sha512-kMpQpfZKSCBqltAJwskgePRaYRFukDkm1oItcAbC3gNELR20XIBcN9VRgg4+m8DKsTfkWeA4m4Imp4DDuWy7FQ==
 
 "@types/q@^1.5.1":
   version "1.5.5"
@@ -2582,9 +2582,9 @@
   integrity sha512-L28j2FcJfSZOnL1WBjDYp2vUHCeIFlyYI/53EwD/rKUBQ7MtUUfbQWiyKJGpcnv4/WgrhWsFKrcPstcAt/J0tQ==
 
 "@types/react-dom@^16.9.8":
-  version "16.9.14"
-  resolved "https://registry.npmjs.org/@types/react-dom/-/react-dom-16.9.14.tgz"
-  integrity sha512-FIX2AVmPTGP30OUJ+0vadeIFJJ07Mh1m+U0rxfgyW34p3rTlXI+nlenvAxNn4BP36YyI9IJ/+UJ7Wu22N1pI7A==
+  version "16.9.20"
+  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-16.9.20.tgz#39eff50cf3f88d6c05647ffb178af36a0ddf11a1"
+  integrity sha512-sYJBek61QO1qeZOnGy79jOaQnQK/sT5CHK0gmwEhMzbhrgpRWoxdEXRaaR96vGfRttWliKG82SVrWbc6WRNwng==
   dependencies:
     "@types/react" "^16"
 
@@ -2605,18 +2605,18 @@
     csstype "^3.0.2"
 
 "@types/react@^16", "@types/react@^16.9.35":
-  version "16.14.21"
-  resolved "https://registry.npmjs.org/@types/react/-/react-16.14.21.tgz"
-  integrity sha512-rY4DzPKK/4aohyWiDRHS2fotN5rhBSK6/rz1X37KzNna9HJyqtaGAbq9fVttrEPWF5ywpfIP1ITL8Xi2QZn6Eg==
+  version "16.14.48"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.14.48.tgz#bce2e699e9dbf8d9dc33ba9167225758c94e1d6a"
+  integrity sha512-7HP7K9IyuP6CpxEHmfRPEl21pwra+nSgZHXhyq7WOkxhIGYtSpIHJBijh4zuScgelrPxsUXVPDRkSKHhT+6nkg==
   dependencies:
     "@types/prop-types" "*"
     "@types/scheduler" "*"
     csstype "^3.0.2"
 
 "@types/scheduler@*":
-  version "0.16.2"
-  resolved "https://registry.npmjs.org/@types/scheduler/-/scheduler-0.16.2.tgz"
-  integrity sha512-hppQEBDmlwhFAXKJX2KnWLYu5yMfi91yazPb2l+lbJiwW+wdo1gNeRA+3RgNSO39WYX2euey41KEwnqesU2Jew==
+  version "0.16.4"
+  resolved "https://registry.yarnpkg.com/@types/scheduler/-/scheduler-0.16.4.tgz#fedc3e5b15c26dc18faae96bf1317487cb3658cf"
+  integrity sha512-2L9ifAGl7wmXwP4v3pN4p2FLhD0O1qsJpvKmNin5VA8+UvNVb447UDaAEV6UdrkA+m/Xs58U1RFps44x6TFsVQ==
 
 "@types/stack-utils@^2.0.0":
   version "2.0.1"
@@ -3594,7 +3594,12 @@ cssstyle@^2.3.0:
   dependencies:
     cssom "~0.3.6"
 
-csstype@^3.0.2, csstype@^3.0.9:
+csstype@^3.0.2:
+  version "3.1.2"
+  resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.1.2.tgz#1d4bf9d572f11c14031f0436e1c10bc1f571f50b"
+  integrity sha512-I7K1Uu0MBPzaFKg4nI5Q7Vs2t+3gWWW648spaF+Rg7pI9ds18Ugn+lvg4SHczUdKlHI5LWBXyqfS8+DufyBsgQ==
+
+csstype@^3.0.9:
   version "3.0.10"
   resolved "https://registry.npmjs.org/csstype/-/csstype-3.0.10.tgz"
   integrity sha512-2u44ZG2OcNUO9HDp/Jl8C07x6pU/eTR3ncV91SiK3dhG9TWvRVsCoJw14Ckx5DgWkzGA3waZWO3d7pgqpUI/XA==
